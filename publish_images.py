@@ -149,7 +149,7 @@ class DepthImagePublisher(AbstractImagePublisher):
          # -- Check input.
         shape = cv2_uint16_image.shape  # (row, col)
         assert(len(shape) == 2)
-        assert(type(cv2_uint16_image[0, 0] == np.uint16))
+        assert(type(cv2_uint16_image[0, 0]) == np.uint16)
 
         # -- Convert to ROS format.
         ros_image = self._cv_bridge.cv2_to_imgmsg(cv2_uint16_image, "16UC1")
