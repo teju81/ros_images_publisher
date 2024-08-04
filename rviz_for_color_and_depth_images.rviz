@@ -51,7 +51,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /test_data/color
+      Image Topic: /camera/color/image_raw
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -63,7 +63,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /test_data/depth
+      Image Topic: /camera/aligned_depth_to_color/image_raw
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -76,7 +76,7 @@ Visualization Manager:
     - Class: rviz/Camera
       Enabled: true
       Image Rendering: background and overlay
-      Image Topic: /test_data/color
+      Image Topic: /camera/color/image_raw
       Name: Camera_color
       Overlay Alpha: 0.5
       Queue Size: 2
